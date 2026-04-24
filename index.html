@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Joana's Mobile Pet Grooming</title>
+</head>
+<body>
+  <script>
+    // Get the user's system language
+    const userLanguage = navigator.language || navigator.userLanguage;
+    
+    // Check if language starts with 'es' (Spanish)
+    if (userLanguage.startsWith('es')) {
+      window.location.href = 'index-es.html';
+    } else {
+      // Default to English for any other language
+      window.location.href = 'index-en.html';
+    }
+  </script>
+</body>
+</html>
